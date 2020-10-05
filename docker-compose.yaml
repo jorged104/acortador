@@ -40,9 +40,7 @@ services:
   api:
     image: node
     restart: always
-    working_dir: /home/node/app
-    volumes:
-        - ./www/:/home/node/app
+    working_dir: /app
     expose:
       - "3001"
     environment:
@@ -51,7 +49,6 @@ services:
         - LETSENCRYPT_HOST=api.shortn.cc
         - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
         - NODE_ENV=production
-    command: "npm install"
     command: "npm start"
 volumes: 
   certs:
