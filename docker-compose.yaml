@@ -37,6 +37,16 @@ services:
       - VIRTUAL_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
+  api:
+    image: node
+    restart: always
+    expose:
+      - "3000"
+    environment:
+        - VIRTUAL_HOST=api.shortn.cc,api.shortn.cc
+        - LETSENCRYPT_HOST=api.shortn.cc,api.shortn.cc
+        - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
+
 volumes: 
   certs:
   html:
