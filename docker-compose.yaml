@@ -42,16 +42,17 @@ services:
     restart: always
     working_dir: /home/node/app
     volumes:
-        - ./API/:/home/node/app
+        - ./www/:/home/node/app
     expose:
-      - "3000"
+      - "3001"
     environment:
-        - VIRTUAL_HOST=api.shortn.cc,api.shortn.cc
-        - VIRTUAL_PORT=3000
-        - LETSENCRYPT_HOST=api.shortn.cc,api.shortn.cc
+        - VIRTUAL_HOST=api.shortn.cc
+        - VIRTUAL_PORT=3001
+        - LETSENCRYPT_HOST=api.shortn.cc
         - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
         - NODE_ENV=production
-    command: "npm run dev"
+    command: "npm install"
+    command: "npm start"
 volumes: 
   certs:
   html:
