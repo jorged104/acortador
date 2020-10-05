@@ -32,7 +32,7 @@ services:
     expose:
       - "80"
     volumes:
-      - fronted/dist/:/usr/share/nginx/html:ro
+      - ./fronted/dist/:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
