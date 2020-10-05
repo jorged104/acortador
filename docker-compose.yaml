@@ -38,7 +38,7 @@ services:
       - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
   api:
-    image: node
+    image: nodejorge
     restart: always
     working_dir: /app
     expose:
