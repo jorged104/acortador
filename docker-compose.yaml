@@ -40,13 +40,18 @@ services:
   api:
     image: node
     restart: always
+    working_dir: /home/node/app
+    volumes:
+        - ./API/:/home/node/app
     expose:
       - "3000"
     environment:
         - VIRTUAL_HOST=api.shortn.cc,api.shortn.cc
+        - VIRTUAL_PORT=3000
         - LETSENCRYPT_HOST=api.shortn.cc,api.shortn.cc
         - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
-
+        - NODE_ENV=production
+    command: "npm run dev"
 volumes: 
   certs:
   html:

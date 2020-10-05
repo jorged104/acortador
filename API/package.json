@@ -22,7 +22,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js --exec babel-node"
+    "dev": "node index.js --exec babel-node",
+    "build": "babel . -d dist",
+    "start": "node index.js --exec babel-node"
   },
   "author": "jorge Nowell",
   "license": "ISC"
