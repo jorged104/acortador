@@ -34,9 +34,9 @@ services:
     volumes:
       - /fronted/dist/:/usr/share/nginx/html:ro
     environment:
-      - VIRTUAL_HOST=shortn.com,www.shortn.com
-      - LETSENCRYPT_HOST=shortn.com,www.shortn.com
-      - LETSENCRYPT_EMAIL=master@shortn.com
+      - VIRTUAL_HOST=shortn.cc,www.shortn.cc
+      - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
+      - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
 volumes: 
   certs:
   html:
