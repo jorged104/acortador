@@ -24,7 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node index.js --exec babel-node",
     "build": "babel . -d dist",
-    "start": "babel-node index.js --execs"
+    "start": "babel-node index.js --exec"
   },
   "author": "jorge Nowell",
   "license": "ISC"
