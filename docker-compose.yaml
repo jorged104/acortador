@@ -51,7 +51,8 @@ services:
         - USER=root
         - PASS=shortnowell104
     command: "npm start"
-    depends_on: mongodb
+    depends_on: 
+      - mongodb
   mongodb:
     image: mongo
     restart: always
