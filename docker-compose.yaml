@@ -14,7 +14,6 @@ services:
       - html:/usr/share/nginx/html
     labels:
       - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
-
   letsencrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion
     restart: always
@@ -49,7 +48,19 @@ services:
         - LETSENCRYPT_HOST=api.shortn.cc
         - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
         - NODE_ENV=production
+        - USER=root
+        - PASS=shortnowell104
     command: "npm start"
+    depends_on: mongodb
+  mongodb:
+    image: mongo
+    restart: always
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=shortnowell104
+    volumenes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db
 volumes: 
   certs:
   html:
