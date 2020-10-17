@@ -1,4 +1,4 @@
 FROM node
 WORKDIR /app
-ADD ./dist/ /app
+ADD . /app
 RUN npm install
