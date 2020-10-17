@@ -30,8 +30,6 @@ services:
     restart: always
     expose:
       - "80"
-    volumes:
-      - ./frontend/dist/:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
