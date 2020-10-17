@@ -58,6 +58,7 @@ services:
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=shortnowell104
+      - MONGO_INITDB_DATABASE=acortador
     volumes:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
       - ./mongo-volume:/data/db
