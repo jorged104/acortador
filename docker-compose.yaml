@@ -26,7 +26,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   www:
-    image: nginx
+    image: frontend
     restart: always
     expose:
       - "80"
@@ -37,7 +37,7 @@ services:
       - LETSENCRYPT_HOST=shortn.cc,www.shortn.cc
       - LETSENCRYPT_EMAIL=nowelljorge@gmail.com
   api:
-    image: nodejorge
+    image: api
     restart: always
     working_dir: /app
     expose:

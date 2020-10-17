@@ -11,7 +11,7 @@ import axios from 'axios';
 
 //import "bootswatch/dist/pulse/bootstrap.min.css";
 
-axios.defaults.baseURL=   process.env.URL || 'http://localhost:3000/api/' 
+axios.defaults.baseURL=  'https://api.shortn.cc/api/' 
 
 Vue.config.productionTip = true
 
