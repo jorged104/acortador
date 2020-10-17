@@ -50,6 +50,7 @@ services:
         - NODE_ENV=production
         - USER=root
         - PASS=shortnowell104
+        - PORT=3001
     command: "npm start"
     depends_on: 
       - mongodb
