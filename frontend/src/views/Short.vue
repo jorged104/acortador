@@ -25,6 +25,14 @@ export default {
     );
     plugin.async = true;
     document.head.appendChild(plugin);
+    const popads = document.createElement('script');
+    popads.setAttribute('data-cfasync',"false");
+    popads.setAttribute('src','assets/pop.js');
+    document.head.appendChild(popads);
+   var uid = '117409';
+   var wid = '590753';
+   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
+   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
   },
   methods:{
       comprobar(){

@@ -4,7 +4,7 @@ import usuarioController from '../controllers/usuario_controller';
 
 const router = routerx();
 
-//router.post('/add',usuarioController.add);
+router.post('/add',usuarioController.add);
 //router.get('/query',usuarioController.query);
 //router.get('/list',usuarioController.list);
 //router.put('/activate',usuarioController.activate);

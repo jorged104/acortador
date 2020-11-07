@@ -8,8 +8,8 @@ import router from './routes';
 
 //conect db 
 mongoose.Promise = global.Promise;
-const dburl = 'mongodb://mongodb:27017/acortador';
-mongoose.connect(dburl, {user: process.env.USER,pass: process.env.PASS})
+const dburl = 'mongodb://localhost:27017/acortador';
+mongoose.connect(dburl)
 .then(mongoose => console.log('Conectando a la db 27017'))
 .catch(err => console.log(err));
 
