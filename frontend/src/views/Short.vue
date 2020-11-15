@@ -1,19 +1,37 @@
 <template>
-  <main id="main" class="mid">
 
-    <div class="row">
-        <div class="col">
-        </div>
+<div class="container mid">
+  <div class="row">
+    <div class="col">
     </div>
-    <div class="row p-5">
-        <div class="col">
-          
-        </div>
-        <div class="col">
-      <button class="btn btn-primary" @click="comprobar">Ir al enlace</button> 
-        </div>
+    <div class="col">
+      <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
     </div>
-</main>
+     <div class="col">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+     <center>    <button class="btn btn-primary" @click="comprobar">Ir al enlace</button> </center> 
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+      <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
+    </div>
+     <div class="col">
+    </div>
+  </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -25,10 +43,7 @@ export default {
     );
     plugin.async = true;
     document.head.appendChild(plugin);
-    const popads = document.createElement('script');
-    popads.setAttribute('data-cfasync',"false");
-    popads.setAttribute('src','assets/pop.js');
-    document.head.appendChild(popads);
+
    var uid = '117409';
    var wid = '590753';
    var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
@@ -46,14 +61,11 @@ export default {
   }
 };
 </script>
+
 <style >
-html,
-body {
-  height: 100%;
-}
+
 .mid{
   padding-top: 80px;
-  padding-bottom: 20px;
-  height: 500px;
+  height: 1000px;
 }
 </style>
