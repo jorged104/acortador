@@ -1,33 +1,33 @@
 <template>
 
-<div class="container mid">
+<div class="container-fluid mid">
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
     </div>
-    <div class="col">
+    <div class="col-sm">
       <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
     </div>
-     <div class="col">
+     <div class="col-sm">
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
     </div>
-    <div class="col">
+    <div class="col-sm">
      <center>    <button class="btn btn-primary" @click="comprobar">Ir al enlace</button> </center> 
     </div>
-    <div class="col">
+    <div class="col-sm">
       
     </div>
   </div>
   <br><br>
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
     </div>
-    <div class="col">
+    <div class="col-sm">
       <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
     </div>
-     <div class="col">
+     <div class="col-sm">
     </div>
   </div>
 </div>

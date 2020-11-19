@@ -1,21 +1,21 @@
 <template>
-<div class="conteiner mid">
+<div class="conteiner-fluid mid">
 
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
     </div>
-    <div class="col">
+    <div class="col-sm">
       <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
     </div>
-     <div class="col">
+     <div class="col-sm">
     </div>
   </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-sm">
      
     </div>
-    <div class="col">
+    <div class="col-sm">
        <center> 
            <div v-if="mostrar"> 
                 <button  class="btn btn-primary" @click="go"> Ir a enlace </button> </div>
@@ -28,18 +28,18 @@
             <strong>Error</strong> 
         </div>
     </div>
-    <div class="col">
+    <div class="col-sm">
 
     </div>
 </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
     </div>
-    <div class="col">
+    <div class="col-sm">
       <center><iframe src="//a.exdynsrv.com/iframe.php?idzone=4056694&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>  </center> 
     </div>
-     <div class="col">
+     <div class="col-sm">
     </div>
   </div>
 
